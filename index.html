@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="img">
+      <picture>
+        <source media="(max-width:430px)" srcset="images/image-product-mobile.jpg">
+        <img src="images/image-product-desktop.jpg" alt="" class="decorative__img">
+    </div>
+
+    <div class="content">
+      <span>P E R F U M E</span>
+
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+
+      <span class="price price--highlight">$149.99</span>
+      <span class="price text--gray price--del">$169.99</span>
+        <br>
+      <div class="button"><img src="images/icon-cart.svg">Add to Cart</div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/VHAlvesS">Vitor Hugo / VHAlvesS </a>.
+  </div>
+</body>
+
+</html>

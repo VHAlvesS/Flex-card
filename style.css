@@ -1,0 +1,121 @@
+:root {
+    --green: rgba(61, 129, 104, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+margin:0;
+padding:0;
+background-color: #F2EAE2;
+
+/* Center everything */
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+flex-direction: column;
+gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+/* ---- Typography ---- */
+
+.text--gray {
+    color: #6C7289;
+    font-size: 13px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #1C232B;
+    line-height: 32px;
+}
+
+p {
+color: rgba(108, 114, 137, 1);
+line-height: 23px;
+
+margin-top: 24px;
+margin-bottom: 29px;
+}
+
+.price--highlight {
+color: var(--green);
+font-size: 2rem;
+padding-right: 1rem;
+padding-bottom: 1.8rem;
+}
+
+.price--del {
+    text-decoration: line-through;
+}
+
+
+.button {
+text-decoration: none;
+display: block;
+background-color: var(--green);
+color: white;
+border-radius: 8px;
+margin-top: 2rem;
+text-align: center;
+padding: 1.2rem;
+font-weight: 900;
+cursor: pointer;
+}
+.button img {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.button:hover,  .button:focus {
+    background-color: rgb(39, 87, 69);
+}
+
+/* ---- Card ---- */
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 1rem;
+    background-color: white;
+
+    overflow: hidden;
+}
+
+.decorative__img {
+object-fit: cover;
+object-position: center;
+height: 100%;
+}
+
+.content {
+    padding: 2rem;
+    flex: 1 1 0;
+}
+
+.img {
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 430px){
+    .card {
+        flex-direction: row;
+        /* max-height: 450px; */
+    }
+
+    .decorative__img {
+        min-height: 450px;
+    }
+}
